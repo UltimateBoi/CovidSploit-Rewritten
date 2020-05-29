@@ -1,0 +1,7 @@
+public static OpenFileDialog openfiledialog = new OpenFileDialog
+        {
+            Filter = "Lua Script Txt (*.txt)|*.txt|All files (*.*)|*.*",
+            FilterIndex = 1,
+            RestoreDirectory = true,
+            Title = "Memey v1.0"
+        };

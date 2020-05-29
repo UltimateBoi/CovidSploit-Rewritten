@@ -1,0 +1,4 @@
+webBrowser1.Document.InvokeScript("SetText", new object[]
+            {
+                ""
+            });

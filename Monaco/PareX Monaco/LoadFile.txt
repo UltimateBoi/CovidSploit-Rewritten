@@ -1,0 +1,17 @@
+ if (Functions.openfiledialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+
+                    string MainText = File.ReadAllText(Functions.openfiledialog.FileName);
+                    webBrowser1.Document.InvokeScript("SetText", new object[]
+                    {
+                          MainText
+                    });
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
+            }

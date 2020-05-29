@@ -1,0 +1,6 @@
+HtmlDocument document = webBrowser1.Document;
+                string scriptName = "GetText";
+                object[] args = new string[0];
+                object obj = document.InvokeScript(scriptName, args);
+                string script = obj.ToString();
+                api.SendLimitedLuaScript(script);
